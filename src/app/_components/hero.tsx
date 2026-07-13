@@ -25,8 +25,7 @@ export function Hero() {
                                 Seu pet merece cuidado, carinho e atenção especial
                             </motion.h1>
                             <motion.p variants={fadeUp} className="text-slate-600 mt-5 lg:text-lg">
-                                Oferecemos os melhores serviços para garantir o bem-estar 
-                                e a felicidade do seu amigo de quatro patas
+                                Estrutura moderna, tecnologia de ponta e um corpo clínico especializado para garantir diagnósticos precisos e o melhor tratamento para cães e gatos.
                             </motion.p>
                         </div>
                         <div>
@@ -40,19 +39,23 @@ export function Hero() {
 
                         <div className="mt-8">
                             <p className="text-sm mb-4 text-slate-900">
-                                <motion.b variants={fadeUp} className="bg-black text-white px-2 py-1 rounded-md">5%</motion.b> de desconto na primeira compra
+                                <motion.b variants={fadeUp} className=" text-slate-600 px-2 py-1 rounded-md">🏥 Atendimento Clínico e Cirúrgico</motion.b> 
                             </p>
 
-                            <div className='flex mt-auto'>
-                                <div className='w-50 hidden lg:block'>
-                                    <Image
-                                        src={img2}
-                                        alt='Foto cachorro-gato'
-                                        quality={100}
-                                        className='object-fill'
-                                    />
+                                <div className='flex mt-auto'>
+                                    <motion.div
+                                    variants={ScaleIn}
+                                    initial="hidden"
+                                    animate="visible"
+                                     className='w-50 hidden lg:block'>
+                                        <Image
+                                            src={img2}
+                                            alt='Foto cachorro-gato'
+                                            quality={100}
+                                            className='object-fill'
+                                        />
+                                    </motion.div>
                                 </div>
-                            </div>
                         </div>
                     </div>
 
