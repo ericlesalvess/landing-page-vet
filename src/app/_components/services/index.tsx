@@ -32,16 +32,17 @@ export function Services(){
                 Nossos Serviços
             </motion.span>
 
-            <motion.h2 variants={fadeUp} className="text-1xl md:text-5xl font-bold text-slate-800 mt-7">
+            <motion.h2 variants={fadeUp} className="text-lg md:text-5xl font-bold text-slate-800 mt-5">
             Tudo que seu pet precisa em um só lugar
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-slate-600 max-w-2xl mx-auto mt-5 leading-8">
+            <motion.p variants={fadeUp} className="text-slate-600 max-w-2xl mx-auto mt-3 leading-8">
             Desde as primeiras vacinas até os cuidados na idade avançada.
             Nossa equipe está preparada para oferecer o suporte completo que o seu pet precisa,
             estrutura moderna, tecnologia de ponta e um corpo clínico especializado para garantir diagnósticos precisos e o melhor tratamento.
             </motion.p>  
         </motion.div>
-
+         </div>
+        <div className="w-full md:container md:mx-auto md:px-4" >
         <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -77,7 +78,8 @@ export function Services(){
               effect="fade"
               pagination={{ clickable:true}}
               autoplay={{
-              delay:4000,
+              delay:5000,
+              pauseOnMouseEnter:true,
               disableOnInteraction:false
               }}
               speed={900}
@@ -105,14 +107,14 @@ export function Services(){
           </Swiper>
 
         {/* botão de seta esquerda */}
-       <button className="seta-esquerda absolute -left-7 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-md transition-all hover:bg-emerald-600 hover:text-white disabled:opacity-50 md:h-14 md:w-14 md:-left-7 xl:-left-7">
+       <button className="seta-esquerda absolute -left-7 top-1/2 z-10 -translate-y-1/2 hidden md:flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-md transition-all hover:bg-emerald-600 hover:text-white disabled:opacity-50 md:h-14 md:w-14 md:-left-7 xl:-left-7">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
           </button>
 
         {/* botão de seta direita */}
-          <button className="seta-direita absolute -right-7 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-md transition-all hover:bg-emerald-600 hover:text-white disabled:opacity-50 md:h-14 md:w-14 md:-right-7
+          <button className="seta-direita absolute -right-7 top-1/2 z-10 -translate-y-1/2 hidden md:flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-md transition-all hover:bg-emerald-600 hover:text-white disabled:opacity-50 md:h-14 md:w-14 md:-right-7
             xl:-right-7">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

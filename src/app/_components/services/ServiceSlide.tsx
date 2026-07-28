@@ -14,7 +14,7 @@ export function ServiceSlide({title,description,image,button,icon:Icon}
 :ServiceSlideProps){
     return(
 
-    <div className="relative h-[420px] md:h-[500px] lg:h-[650px] rounded-3xl overflow-hidden">
+    <div className="relative h-[420px] md:h-[500px] lg:h-[650px] w-full rounded-none md:rounded-3xl overflow-hidden">
         
         <Image
             src={image}

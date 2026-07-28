@@ -5,7 +5,7 @@ export const staggerContainer: Variants ={
     visible: {
         transition:{
 
-        staggerChildren: 0.18, //espere um tempo antes de animar o proximo filho
+        staggerChildren: 0.20, //espere um tempo antes de animar o proximo filho
         delayChildren: 0.2 // delay para refinar 
 
         }
