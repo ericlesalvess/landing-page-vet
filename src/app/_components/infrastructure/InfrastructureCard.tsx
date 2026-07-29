@@ -16,12 +16,17 @@ export function InfrastructureCard({
     image,
     className,}: InfrastructureCardProps) {
     return (
-        <div
-className={`relative overflow-hidden rounded-3xl group h-full aspect-[4/5] ${className}`}
->           
+        <motion.div
+        whileHover={{
+            y:-6,
+            boxShadow:"0px 20px 45px rgba(15,23,42,.18)"
+        }}
+        transition={{duration: .25}}
+         className={`relative overflow-hidden rounded-3xl group h-full min-h[280px] ${className}`}
+                >           
 
         <motion.div
-            className="abosulut inset-0"
+            className="absolute inset-0"
             whileHover={{ scale: 1.08 }}
             transition={{ duration: 0.5 }}        
         
@@ -33,7 +38,6 @@ className={`relative overflow-hidden rounded-3xl group h-full aspect-[4/5] ${cla
                 className="object-cover
                           transition-transform
                           duration-500
-                          group-hover:scale-105
                           select-none
                           overflow-hidden
                           "    
@@ -77,7 +81,7 @@ className={`relative overflow-hidden rounded-3xl group h-full aspect-[4/5] ${cla
 
         </div>
             
-    </div>
+    </motion.div>
 
 
     

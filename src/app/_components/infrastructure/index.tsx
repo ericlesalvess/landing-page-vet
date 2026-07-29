@@ -26,14 +26,14 @@ export function Infrastructure(){
 
                     <motion.h2
                         variants={fadeUp}
-                        className="text-lg max-w-2xl mx-auto text-slate-900 leading-7 mt-3"
+                        className="text-lg max-w-2xl mx-auto text-slate-900 leading-7 mt-1"
                     >
                         Tecnologia, conforto e segurança
                     </motion.h2>
 
                     <motion.p
                         variants={fadeUp}
-                        className="max-w-3xl mx-auto mt-4"
+                        className="max-w-3xl mx-auto mt-1 text-slate-600  leading-7"
                     
                     >
                         Nossa clínica foi planejada para oferecer um ambiente moderno,
@@ -55,6 +55,7 @@ export function Infrastructure(){
                         md:grid-cols-2
                         lg:grid-cols-3
                         auto-rows-[280px]
+                        mt-5
                         ">
 
 
