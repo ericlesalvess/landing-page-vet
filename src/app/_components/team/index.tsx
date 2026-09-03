@@ -13,7 +13,7 @@ import { TeamCard} from "./TeamCard";
 
 export function Team(){
     return(
-        <section className="py-24 bg-white">
+        <section id="equipe" className=" scroll-mt-15 py-24 bg-white">
             <div className="container mx-auto px-4">
                 <motion.div
                 variants={staggerContainer}
@@ -59,10 +59,15 @@ export function Team(){
                             speed={900}
                             //responsividade
                             breakpoints={{
-                                640:{slidesPerView:1.2,},
-                                768:{slidesPerView:2,},
-                                1024:{slidesPerView:3}
-                                
+                                    768:{slidesPerView:2,
+                                         spaceBetween:20,
+                                    },
+                                    1024:{slidesPerView: 2,
+                                        spaceBetween:24,
+                                    },
+                                    1280:{slidesPerView: 3,
+                                        spaceBetween:30,
+                                    }, 
                             }}
                             autoplay={{
                                 delay:5000,

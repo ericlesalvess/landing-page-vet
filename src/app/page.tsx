@@ -5,10 +5,13 @@ import {Testimonials} from "./_components/testimonials";
 import {Team} from "./_components/team";
 import { Infrastructure } from "./_components/infrastructure";
 import {Cta} from "./_components/cta";
+import {Footer} from "./_components/footer"
+import {Header} from "./_components/header"
 
 export default function Home(){
   return(
     <main>
+      <Header/>
       <Hero/>
       <About/>
       <Services/>
@@ -16,7 +19,8 @@ export default function Home(){
       <Team/>
       <Infrastructure/>
       <Cta/>
-
+      <Footer/>
+      
     </main>
   )
 }

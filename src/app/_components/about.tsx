@@ -10,7 +10,7 @@ import {fadeLeft, fadeRight, fadeUp, staggerContainer} from "@/animations";
 
 export function About (){
     return (
-        <section className="bg-stone-50 py-24">
+        <section id='sobre' className="bg-stone-50 py-24">
            <div className="container px-4 mx-auto ">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
 

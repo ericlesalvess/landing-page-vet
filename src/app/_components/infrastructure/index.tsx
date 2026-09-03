@@ -7,7 +7,7 @@ import { InfrastructureCard } from "./InfrastructureCard";
 
 export function Infrastructure(){
     return(
-         <section className="py-24 bg-slate-50">
+         <section id="estrutura" className=" scroll-mt-15  py-24 bg-slate-50">
              <div className="container mx-auto px-4">
                 
                 <motion.div 

@@ -27,11 +27,7 @@ export function TeamCard({
      h-full
      "
     >
-        <div className="relative 
-                         h-[470px]
-                         md:h-[550px]
-                         lg:h-[650px] 
-                         overflow-hidden"> 
+        <div className="relative h-[360px] sm:h-[400px] md:h-[440px] lg:h-[600px] overflow-hidden"> 
            <motion.div
            className="absolute inset-0"
            whileHover={{scale:1.08}}

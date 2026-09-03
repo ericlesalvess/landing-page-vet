@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import {Pagination,Autoplay,EffectFade,Navigation} from "swiper/modules";
+import {Pagination,Autoplay,Navigation} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,7 +17,7 @@ export function Services(){
 
     return(
 
-    <section className="bg-stone-50 py-10">
+    <section id="servicos" className="scroll-mt-30 bg-stone-50 py-10">
 
       <div className="container mx-auto  px-4">
 
@@ -71,11 +71,13 @@ export function Services(){
                 768:{slidesPerView:2,
                     spaceBetween:20,
                 },
-                1024:{slidesPerView: 3,
+                1024:{slidesPerView: 2,
+                      spaceBetween:24,
+                },
+                1280:{slidesPerView: 3,
                       spaceBetween:30,
-                }
+                },
               }}
-              effect="fade"
               pagination={{ clickable:true}}
               autoplay={{
               delay:5000,
