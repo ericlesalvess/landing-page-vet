@@ -14,20 +14,13 @@ export function Footer() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="
-            grid
-            grid-cols-2
-            gap-8
-            md:gap-12
-            lg:grid-cols-4
-          "
-        >
+          className="grid grid-cols-2 gap-8 md:gap-12 lg:grid-cols-4">
 
           
           <motion.div className="col-span-2 lg:col-span-1" variants={fadeUp}>
               <h2 className="text-2xl font-bold ">Vet Service</h2>
               <p className="mt-5 text-slate-400 leading-7" >
-                Atendimento veterinário humanizado,estrutura moderna e profissionais preaparados para cuidas do seu melhor amigo.
+                Atendimento veterinário humanizado,estrutura moderna e profissionais preaparados para cuidar do seu melhor amigo.
               </p>
           </motion.div>
 
@@ -76,14 +69,14 @@ export function Footer() {
 
             <div className="flex gap-5 mt-6">
                <a 
-                  href=""
+                  href="https://instagram.com"
                   className="w-11 h-11 px-3 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition-all duration-300"
                   >
                     <InstagramLogoIcon size={22}/>
                </a>
 
                <a 
-                  href="#"
+                  href="https://facebook.com"
                   className="w-11 h-11 px-3 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition-all duration-300"
                   
                   >
@@ -91,7 +84,7 @@ export function Footer() {
                </a>
 
                <a
-                    href="#"
+                    href="https://wa.me/55SEUNUMERO"
                    className="w-11 h-11 px-3 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition-all duration-300"
                    >
                 <WhatsappLogoIcon size={22}/>

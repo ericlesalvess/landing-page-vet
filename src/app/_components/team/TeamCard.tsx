@@ -19,14 +19,7 @@ export function TeamCard({
     variants={cardHover}
     initial="rest"
     whileHover="hover"
-    className="bg-white
-     rounded-3xl
-     overflow-hidden
-     shadow-lg
-     border border-slate-200
-     h-full
-     "
-    >
+    className="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 h-full">
         <div className="relative h-[360px] sm:h-[400px] md:h-[440px] lg:h-[600px] overflow-hidden"> 
            <motion.div
            className="absolute inset-0"
@@ -34,27 +27,17 @@ export function TeamCard({
            transition={{duration:0.4}}
            >
 
-            <Image
-                src={image}
-                alt={name}
-                fill
-                className="
-                object-cover
-                object-top 
-        "
-                />
+              <Image
+                  src={image}
+                  alt={name}
+                  fill
+                  className="object-cover object-top"/>
 
            </motion.div>
             
 
-               <div className="
-                   absolute
-                    inset-0
-                    bg-gradient-to-t
-                    from-black/80
-                    via-black/20
-                    to-transparent">
-             </div>  
+               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+              </div>  
              <motion.div
              variants={staggerContainer}
              initial="hidden"
@@ -68,15 +51,9 @@ export function TeamCard({
                 <motion.p  variants={fadeUp} className="text-slate-200"> {role}</motion.p>
                 <motion.p variants={fadeUp} className="text-slate-300 "> {crmv}</motion.p>   
                 
-            
-              
-              
               </motion.div>
 
-
-              
         </div>
-
 
     </motion.div>
   )

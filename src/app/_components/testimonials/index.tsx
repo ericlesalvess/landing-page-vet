@@ -15,7 +15,7 @@ import { fadeUp, staggerContainer} from "@/animations";
 
 export function Testimonials(){
     return (
-        <section id="depoimentos" className="scroll-mt-15 bg-stone-50 py-24">
+        <section id="depoimentos" className="scroll-mt-15 bg-stone-50 py-12">
             
           <div className="container mx-auto px-4">
 
@@ -23,7 +23,7 @@ export function Testimonials(){
                       variants={staggerContainer}
                       initial="hidden"
                       whileInView="visible"
-                      viewport={{once: true, amount:0.2}}  //Anima só uma vez quando aparecer 20% do elemento
+                      viewport={{once: true, amount:0.2}}
                       className="text-center mb-14" >
 
                     <motion.h1 variants={fadeUp} className=" mx-auto text-3xl text-emerald-600 uppercase tracking-[0.3em] font-semibold">
@@ -38,17 +38,16 @@ export function Testimonials(){
                     variants={fadeUp}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{once:true, amount:0.1}}//10%do carrosel na tela ele aparece
-                    transition={{delay:0.3}} //delay para q o texto anime antes da foto
+                    viewport={{once:true, amount:0.1}}
+                    transition={{delay:0.3}} 
                     className="posi-seta relative">
 
                     <Swiper
                                 modules={[Pagination,Autoplay,Navigation]}
-                                //Mobile
                                 slidesPerView={1}
                                 spaceBetween={30}
                                 loop={true}
-                                //Responsividade
+
                                 breakpoints={{
                                     768:{slidesPerView:2,
                                     },
@@ -60,18 +59,14 @@ export function Testimonials(){
                                   disableOnInteraction:false,
                                   pauseOnMouseEnter:true
                                 }}
-                                
-                               
                     
                                 >
-                            { testimonials.map((testimonial)=>( // {...testimonial} pega todas as props dos dados o operador "..." significa todos 
+                            { testimonials.map((testimonial)=>(
                                 <SwiperSlide key={testimonial.id} className="py-4">
                                     <TestimonialCard {...testimonial} ></TestimonialCard> 
                                 </SwiperSlide>
                             ))}
                     </Swiper>
-
-                      {/* botão de seta esquerda */}
                     
                 </motion.div>
          </div>

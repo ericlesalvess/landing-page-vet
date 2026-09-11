@@ -7,7 +7,7 @@ import { InfrastructureCard } from "./InfrastructureCard";
 
 export function Infrastructure(){
     return(
-         <section id="estrutura" className=" scroll-mt-15  py-24 bg-slate-50">
+         <section id="estrutura" className=" scroll-mt-15  py-12 bg-slate-50">
              <div className="container mx-auto px-4">
                 
                 <motion.div 
@@ -42,22 +42,12 @@ export function Infrastructure(){
                     </motion.p>
 
 
-                      {/* GRID AQUI*/}
-
                     <motion.div
                         variants={fadeUp}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{once:true, amount:0.2}}
-                        className="
-                        grid
-                        gap-6
-                        md:grid-cols-2
-                        lg:grid-cols-3
-                        auto-rows-[280px]
-                        mt-5
-                        ">
-
+                        className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] mt-5">
 
                             {infrastructure.map((item,index)=>(
                                 <InfrastructureCard

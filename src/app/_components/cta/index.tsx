@@ -10,7 +10,7 @@ export function Cta(){
 
     return(
 
-    <section id="contato" className=" scroll-mt-15  py-24 bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-800">
+    <section id="contato" className=" scroll-mt-15  py-15 bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-800">
         <div className="container mx-auto px-4">
                 <motion.div
                 variants={staggerContainer}

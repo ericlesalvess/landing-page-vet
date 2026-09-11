@@ -17,7 +17,7 @@ export function Services(){
 
     return(
 
-    <section id="servicos" className="scroll-mt-30 bg-stone-50 py-10">
+    <section id="servicos" className="scroll-mt-30 bg-slate-50 py-12">
 
       <div className="container mx-auto  px-4">
 
@@ -25,7 +25,7 @@ export function Services(){
         initial="hidden"
         whileInView="visible"
         viewport={{ once:true,
-                    amount:0.2}}  //Anima só uma vez quando aparecer 20% do elemento
+                    amount:0.2}} 
         className="text-center mb-14">
 
             <motion.span variants={fadeUp} className="  text-3xl text-emerald-600 uppercase tracking-[0.3em] font-semibold">
@@ -47,26 +47,23 @@ export function Services(){
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{once:true, amount:0.1}}//10%do carrosel na tela ele aparece
-        transition={{delay:0.3}} //delay para q o texto anime antes da foto
+        viewport={{once:true, amount:0.1}}
+        transition={{delay:0.3}} 
         className="posi-seta relative">
           <Swiper
 
             style={{
               "--swiper-pagination-color": "#059669",
               "--swiper-pagination-bullet-inactive-color": "#94a3b8",
-              "--swiper-pagination-bullet-inactive-opacity": "0.5", // Transparência das inativas
-              "--swiper-pagination-bullet-size": "10px", // Tamanho das bolinhas 
-              "--swiper-pagination-bullet-horizontal-gap": "6px" // Espaço entre elas 
+              "--swiper-pagination-bullet-inactive-opacity": "0.5",
+              "--swiper-pagination-bullet-size": "10px", 
+              "--swiper-pagination-bullet-horizontal-gap": "6px"
               } as React.CSSProperties}
 
 
               modules={[Pagination,Autoplay,Navigation]}
-              //Mobile
               slidesPerView={1}
-            
               loop={true}
-              //Responsividade
               breakpoints={{
                 768:{slidesPerView:2,
                     spaceBetween:20,
@@ -116,8 +113,7 @@ export function Services(){
           </button>
 
         {/* botão de seta direita */}
-          <button className="seta-direita absolute -right-7 top-1/2 z-10 -translate-y-1/2 hidden md:flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-md transition-all hover:bg-emerald-600 hover:text-white disabled:opacity-50 md:h-14 md:w-14 md:-right-7
-            xl:-right-7">
+          <button className="seta-direita absolute -right-7 top-1/2 z-10 -translate-y-1/2 hidden md:flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-md transition-all hover:bg-emerald-600 hover:text-white disabled:opacity-50 md:h-14 md:w-14 md:-right-7 xl:-right-7">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>

@@ -21,8 +21,7 @@ interface TestimonialCardProps{
 export function TestimonialCard({tutorName,pet,petType,avatar,text,rating}:TestimonialCardProps){
     return ( 
         <motion.div 
-        className=" bg-white rounded-2xl border border-slate-200
-         shadow-md p-8 h-full relative overflow-hidden"
+        className=" bg-white rounded-2xl border border-slate-200 shadow-md p-8 h-full relative overflow-hidden"
        variants={cardHover}
        initial="rest"
        whileHover="hover"
@@ -42,7 +41,7 @@ export function TestimonialCard({tutorName,pet,petType,avatar,text,rating}:Testi
                 <p className="text-slate-600">{petType} - {pet}</p>
              </div>
               <div className="ml-auto flex gap-1 mb-5">
-                {Array.from({ length: rating}).map((_,index)=>( // _ significa nao preciso do valor apenas do indice
+                {Array.from({ length: rating}).map((_,index)=>( 
                     <Star  
                         key={index}
                         className="w-5 h-5 fill-yellow-400 text-yellow-400"

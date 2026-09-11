@@ -13,7 +13,7 @@ import { TeamCard} from "./TeamCard";
 
 export function Team(){
     return(
-        <section id="equipe" className=" scroll-mt-15 py-24 bg-white">
+        <section id="equipe" className=" scroll-mt-15 py-12 bg-white">
             <div className="container mx-auto px-4">
                 <motion.div
                 variants={staggerContainer}
@@ -51,13 +51,12 @@ export function Team(){
                     >
                         <Swiper
                             modules={[Pagination,Autoplay]}
-                            //mobile
                             slidesPerView={1}
                             spaceBetween={40}
                             loop={true}
                             centeredSlides={true}
                             speed={900}
-                            //responsividade
+                            
                             breakpoints={{
                                     768:{slidesPerView:2,
                                          spaceBetween:20,

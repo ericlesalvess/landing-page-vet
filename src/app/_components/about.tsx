@@ -14,10 +14,10 @@ export function About (){
            <div className="container px-4 mx-auto ">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
 
-                <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" //quando entrar na tela visivel
+                <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" 
                  viewport={{
-                    once:true, //anima uma so vez
-                    amount:0.35 //35% do elemento visivel na tela inicie a animação
+                    once:true, 
+                    amount:0.35 
                  }}
                  className="relative">
                  <div className="  relative w-full h-[400px] rounded-xl rounded-3x1 overflow-hidden shadow-2xl">
@@ -41,10 +41,10 @@ export function About (){
 
                 </motion.div>
 
-                <motion.div variants={fadeRight} initial="hidden" whileInView="visible" //quando entrar na tela visivel
+                <motion.div variants={fadeRight} initial="hidden" whileInView="visible" 
                  viewport={{
-                    once:true, //anima uma so vez
-                    amount:0.35 //35% do elemento visivel na tela inicie a animação
+                    once:true, 
+                    amount:0.35 
                  }}
                  className="space-y-6 mt-8">
                     <h2 className="text-4xl font-bold text-slate-900">SOBRE</h2>
@@ -72,10 +72,7 @@ export function About (){
                             <Check className="text-emerald-600" />
                              🚑 Emergência 24h
                         </motion.li>
-                        <motion.li variants={fadeUp} className="flex items-center gap-2">
-                            <Check className="text-emerald-600" />
-                            ⭐ 5.0 de avaliação
-                        </motion.li>
+                       
                         
 
                     </motion.ul>
@@ -91,9 +88,7 @@ export function About (){
                                 }}
                                         
                                 href="#"
-                                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 
-                                rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl 
-                                 flex items-center gap-2 w-fit">
+                                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 w-fit">
                                 <WhatsappLogoIcon className='w-5 h-5 text-white '/>
                                      Contato via WhatsApp
                         </motion.a>

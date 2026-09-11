@@ -42,7 +42,7 @@ export function ServiceSlide({title,description,image,button,icon:Icon}
             </div>
             
             <div className="max-w-xl text-white">
-                <p className="text-sm sm:text-base md:text-lg leading-6 md:leading-8 text-slate-200 mb-6 line-clamp-3 min-h-[4.5rem] flex items-center">
+                <p className=" sm: text-sm sm:text-base md:text-lg leading-6 md:leading-8 text-slate-200 mb-2 line-clamp-3 min-h-[4.5rem] flex items-center">
                     {description}
                 </p>
                 <button className="bg-emerald-600 hover:bg-emerald-700 transition-all duration-300 px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold">
